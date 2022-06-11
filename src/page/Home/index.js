@@ -4,15 +4,17 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import LookBook from "../../components/LookBook";
 import Blog from "../../components/blog";
+import Carusel from "../../components/Carusel/index";
 
 export default () => {
-	return (
-		<>
-			<Navbar />
-			<Image_list />
-			<LookBook />
-			<Blog />
-			<Footer />
-		</>
-	);
+  return (
+    <>
+      <Carusel />
+      <Navbar />
+      <Image_list />
+      <LookBook />
+      <Blog />
+      <Footer />
+    </>
+  );
 };
