@@ -5,6 +5,7 @@ import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import img1 from "../../assets/img/banner-08_720x539.webp";
 import img2 from "../../assets/img/shop.webp";
+import "./style.css"
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -30,7 +31,7 @@ export default () => {
           <Grid item xs={11} sm={11} md={5}>
             <Item>
               <Item sx={{ position: "relative" }}>
-                <div style={{ alignItems: "center" }}>
+                <div style={{ alignItems: "center",overflow:"hidden" }}>
                   <div
                     style={{
                       paddingLeft: "6%",
@@ -72,6 +73,7 @@ export default () => {
                     </div>
                   </div>
                   <img
+                  className="imgcard"
                     src={img1}
                     style={{ width: "100%", opacity: "1" }}
                     alt=""
@@ -86,7 +88,7 @@ export default () => {
           <Grid item xs={11} sm={11} md={5}>
             <Item>
               <Item sx={{ position: "relative" }}>
-                <div style={{ alignItems: "center" }}>
+                <div style={{ alignItems: "center", overflow:"hidden" }} >
                   <div
                     style={{
                       paddingLeft: "6%",
@@ -163,6 +165,7 @@ export default () => {
                   </div>
                   <img
                     src={img2}
+                    className="imgcard"
                     style={{ width: "100%", opacity: "1" }}
                     alt=""
                   />
